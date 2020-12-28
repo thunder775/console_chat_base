@@ -7,9 +7,12 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
-    socket.on('simple chat message', (msg, ackFn) => {
+    let eventName = 'simple chat message';
+    let broadcast = (msg) => socket.broadcast.emit(eventName, msg);
+    socket.on(eventName, (msg, ackFn) => {
         console.log('message: ' + msg);
-        socket.broadcast.emit('simple chat message', msg);
+        // broadcast to other clients after 1.5 seconds
+        setTimeout(broadcast, 1500, msg);
     });
 });
 
