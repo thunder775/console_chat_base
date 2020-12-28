@@ -55,7 +55,7 @@ Time |Client 1 | Client 2 | Client 3
 23|`> Kimiko says "What about Back To The Future?"`| `> Kimiko says "What about Back To The Future?"`
 
 ### Tips
+- You will need to use the [socket.io client API](https://socket.io/docs/v3/client-api/index.html).  You can get an idea of how to code the client with [this getting started page](https://socket.io/get-started/chat/) (although keep in mind it is designed for a browser interface, not a command line interface)
 - Use the `rl.question` function to prompt the user and read in the user's response
 - Note that after we print a message to the console we usually then prompt the user to enter a message - consider having one function for this behaviour
-- If the client receives a message from the server while the user is typing a message, the user's message will be lost 
-because the user did not have a chance to press the 'Enter' key.  This behaviour is acceptable.  
+
