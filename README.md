@@ -24,6 +24,8 @@ The client should do the following:
 
 ### Example
 
+**Note: A walkthough video for this example is [available here](https://youtu.be/yIjVPkS8WMo)**
+
 Here is the console output and input for each of 3 clients showing 3 messages.
 
 Time |Client 1 | Client 2 | Client 3
