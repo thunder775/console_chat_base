@@ -26,11 +26,6 @@ The client should do the following:
 
 Here is the console output and input for each of 3 clients showing 3 messages.
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
 Time |Client 1 | Client 2 | Client 3
 ---|-------- | -------- | --------
 1 |`What's your name ? Mark`|`What's your name ? Mohammad`|`What's your name ? Kimiko`
