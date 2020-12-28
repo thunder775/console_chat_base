@@ -7,7 +7,7 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
-    socket.on('my little chat message', (msg, ackFn) => {
+    socket.on('simple chat message', (msg, ackFn) => {
         console.log('message: ' + msg);
         socket.broadcast.emit('simple chat message', msg);
     });
