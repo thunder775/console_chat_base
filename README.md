@@ -24,7 +24,7 @@ The client should do the following:
 
 ### Example
 
-**Note: A walkthough video for this example is [available on YouTube](https://youtu.be/62H16BgQSgg) or [our website](https://mclarencollege.com/player.html?videoUrl=https%3A%2F%2Fmclaren-college-lecture-recordings.s3.us-east-2.amazonaws.com%2Fin-class_videos%2FJavascript%2BPre-Course%2Fconsole-chat-example.mp4) **
+**Note: A walkthough video for this example is [available on YouTube](https://youtu.be/62H16BgQSgg) or [our website](https://mclarencollege.com/player.html?videoUrl=https%3A%2F%2Fmclaren-college-lecture-recordings.s3.us-east-2.amazonaws.com%2Fin-class_videos%2FJavascript%2BPre-Course%2Fconsole-chat-example.mp4)**
 
 Here is the console output and input for each of 3 clients showing 3 messages.
 
