@@ -26,31 +26,36 @@ The client should do the following:
 
 Here is the console output and input for each of 3 clients showing 3 messages.
 
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 Time |Client 1 | Client 2 | Client 3
 ---|-------- | -------- | --------
-1. |`What's your name ? Mark`|`What's your name ? Mohammad`|`What's your name ? Kimiko`
-2. | `Successfully connected to server`| `Successfully connected to server`| `Successfully connected to server` 
-3. | `>`| `>`| `>`
-4. | *(User 1 types a message)*
-5. | `> My favourite movie is Aliens` 
-6. | *(Client 1 sends message to server)*
-7. | `Sending message: "My favourite movie is Aliens"`
-8. | | *(Client 2 receives message)* | *(Client 3 receives message)* 
-9. | |`> Mark says "My favourite movie is Aliens"`|`> Mark says "My favourite movie is Aliens"`
-10.| | *(User 2 types a message)*
-11.| | `> I prefer Terminator 2`
-12.| | `Sending message: "I prefer Terminator 2"`
-13. | *(Client 1 receives message)* | | *(Client 3 receives message)* 
-14. |`> Mohammad says "I prefer Terminator 2"`| |`> Mohammad says "I prefer Terminator 2"`
-15. | *(Server goes down)* 
-16. |`> Connection lost...`| `> Connection lost...` |`> Connection lost...`
-17. | | | *(User 3 types a message)*
-18. | | | `> What about Back To The Future?`
-19. | | | `Sending message: "What about Back To The Future?"`
-20. | *(Server comes up)* 
-21. | `> Successfully connected to server`| `> Successfully connected to server`| `> Successfully connected to server` 
-22. | *(Client 1 receives message)* | *(Client 2 receives message)* 
-23. |`> Kimiko says "What about Back To The Future?"`| `> Kimiko says "What about Back To The Future?"`
+1 |`What's your name ? Mark`|`What's your name ? Mohammad`|`What's your name ? Kimiko`
+2 | `Successfully connected to server`| `Successfully connected to server`| `Successfully connected to server` 
+3 | `>`| `>`| `>`
+4 | *(User 1 types a message)*
+5 | `> My favourite movie is Aliens` 
+6 | *(Client 1 sends message to server)*
+7 | `Sending message: "My favourite movie is Aliens"`
+8 | | *(Client 2 receives message)* | *(Client 3 receives message)* 
+9 | |`> Mark says "My favourite movie is Aliens"`|`> Mark says "My favourite movie is Aliens"`
+10| | *(User 2 types a message)*
+11| | `> I prefer Terminator 2`
+12| | `Sending message: "I prefer Terminator 2"`
+13| *(Client 1 receives message)* | | *(Client 3 receives message)* 
+14|`> Mohammad says "I prefer Terminator 2"`| |`> Mohammad says "I prefer Terminator 2"`
+15| *(Server goes down)* 
+16|`> Connection lost...`| `> Connection lost...` |`> Connection lost...`
+17| | | *(User 3 types a message)*
+18| | | `> What about Back To The Future?`
+19| | | `Sending message: "What about Back To The Future?"`
+20| *(Server comes up)* 
+21| `> Successfully connected to server`| `> Successfully connected to server`| `> Successfully connected to server` 
+22| *(Client 1 receives message)* | *(Client 2 receives message)* 
+23|`> Kimiko says "What about Back To The Future?"`| `> Kimiko says "What about Back To The Future?"`
 
 ### Tips
 - Use the `rl.question` function to prompt the user and read in the user's response
